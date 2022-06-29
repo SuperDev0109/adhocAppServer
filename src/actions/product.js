@@ -10,6 +10,7 @@ export const getAuthToken = () => async dispatch => {
     });
 
     var requestOptions = {
+        mode: 'no-cors',
         method: 'POST',
         headers: myHeaders,
         body: raw,
