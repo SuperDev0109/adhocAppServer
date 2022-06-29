@@ -6,6 +6,7 @@ export const getAuthToken = () => async dispatch => {
     // setAuthToken(res.data.token);
 }
 
+
 // Load User
 export const getProducts = (param) => async dispatch => {
     try {
