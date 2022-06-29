@@ -16,7 +16,7 @@ export const getAuthToken = () => async dispatch => {
         redirect: 'follow'
     };
 
-    fetch("/api/1/access_token", requestOptions)
+    fetch("https://api-eu.iiko.services/api/1/access_token", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
