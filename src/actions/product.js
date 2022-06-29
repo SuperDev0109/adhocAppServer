@@ -1,27 +1,28 @@
 import api from '../utils/api';
+import setAuthToken from '../utils/setAuthToken';
+
+export const getAuthToken = () => async dispatch => {
+    const res = await api.post('/api/1/access_token', {"apiLogin": "b23027da-b22"});
+    setAuthToken(res.data.token);
+}
 
 // Load User
-export const getProducts = () => async dispatch => {
-  try {
-    const headers = {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcGlMb2dpbklkIjoiNDcwNDBmMWQtODkwOC00ZTc5LWJhYjAtYTM3YzcyMmJjMjRlIiwibmJmIjoxNjU2NDU0MTY3LCJleHAiOjE2NTY0NTc3NjcsImlhdCI6MTY1NjQ1NDE2NywiaXNzIjoiaWlrbyIsImF1ZCI6ImNsaWVudHMifQ.HeZu831QcQHv2ssmWlCo2wuo8gh5y7qX8MGgod7TGy0',
-    }
-    const data = {
-        organizationId: '28fc9d3d-ff05-4a46-ae20-0d864d10bb2d'
-    }
-    const res = await api.post('/api/1/nomenclature',data, {
-        headers: headers
-    });
+export const getProducts = (param) => async dispatch => {
+    try {
+        const data = {
+            organizationId: process.env.REACT_APP_ORGANIZATION_ID
+        }
+        const res = await api.post('/api/1/nomenclature', data);
 
-    dispatch({
-      type: 'GET_PRODUCTS',
-      payload: res.data
-    });
-  } catch (err) {
-    console.log(err);
-    // dispatch({
-    //   type: 'AUTH_ERROR'
-    // });
-  }
+        dispatch({
+            type: 'GET_PRODUCTS',
+            payload: res.data
+        });
+
+        return "success";
+    } catch (err) {
+        if (err.response.status === 401) {
+            return "fail";
+        }
+    }
 };

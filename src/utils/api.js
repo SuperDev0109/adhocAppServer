@@ -17,6 +17,12 @@ const api = axios.create({
  logout the user if the token has expired
 **/
 
+api.interceptors.request.use(function (config) {
+  config.headers.Authorization =  localStorage.getItem('token');
+
+  return config;
+});
+
 api.interceptors.response.use(
   res => res,
   err => {

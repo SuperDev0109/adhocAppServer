@@ -2,11 +2,12 @@ import api from './api';
 
 const setAuthToken = token => {
   if (token) {
-    api.defaults.headers.common['x-auth-token'] = token;
-    localStorage.setItem('token', token);
-  } else {
-    delete api.defaults.headers.common['x-auth-token'];
-    localStorage.removeItem('token');
+    api.interceptors.request.use(function (config) {
+      config.headers.Authorization =  localStorage.getItem('token');
+    
+      return config;
+    });
+    localStorage.setItem('token', "Bearer "+token);
   }
 };
 

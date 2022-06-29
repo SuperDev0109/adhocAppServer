@@ -16,8 +16,8 @@ const ToggleButton = () => {
         x2="36.5"
         y2="1.5"
         stroke="black"
-        stroke-width="3"
-        stroke-linecap="round"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
       <line
         x1="8.5"
@@ -25,8 +25,8 @@ const ToggleButton = () => {
         x2="36.5"
         y2="14.5"
         stroke="#FFB800"
-        stroke-width="3"
-        stroke-linecap="round"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
       <line
         x1="1.5"
@@ -34,8 +34,8 @@ const ToggleButton = () => {
         x2="36.5"
         y2="27.5"
         stroke="black"
-        stroke-width="3"
-        stroke-linecap="round"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
     </svg>
   );

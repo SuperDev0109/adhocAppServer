@@ -13,7 +13,7 @@ export default function ProductReview() {
                     <span className='title2'>(154) reviews</span>
                 </div>
                 <div className='panel2'>
-                    <div className='check'><i class="bi bi-check fa-lg"></i></div>
+                    <div className='check'><i className="bi bi-check fa-lg"></i></div>
                     <span className='title1'>Online payment</span>
                 </div>
                 <div className='panel3'>
@@ -36,14 +36,14 @@ export default function ProductReview() {
                         <Avatar url="/images/product/chief.png" alt="star-icon" style={{position:'absolute'}} />
                     </div>
                     <div className='panel2 panel2Mobile'>
-                        <div className='check'><i class="bi bi-check fa-lg"></i></div>
+                        <div className='check'><i className="bi bi-check fa-lg"></i></div>
                         <span className='title2'><center>Online payment</center></span>
                     </div>
                 </div>
 
                 <div className='panel3 ml-2'>
                     <img src="images/icons/visa.png" alt="visaIcon" width="56px" height="18px" />
-                    <img clasName="mastercard" src="images/icons/mastercard.png" alt="mastercardIcon" width="40px" height="25px" />
+                    <img className="mastercard" src="images/icons/mastercard.png" alt="mastercardIcon" width="40px" height="25px" />
                     <img src="images/icons/paypal.png" alt="paypalIcon" width="84px" height="22px" />
                 </div>
             </div>

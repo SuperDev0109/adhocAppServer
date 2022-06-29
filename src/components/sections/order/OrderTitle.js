@@ -13,7 +13,7 @@ export default function OrderTitle({ title, backto }) {
     return (
         <div className='OrderTitleSection'>
             <div className='container panel d-flex algin-items-center justify-content-center'>
-                <div className='d-flex align-items-center' onClick={() => navigate(backto)}><Button style={{color:'black',paddingLeft:"5px"}}><i class="bi bi-chevron-left"></i> Back</Button></div>
+                <div className='d-flex align-items-center' onClick={() => navigate(backto)}><Button style={{color:'black',paddingLeft:"5px"}}><i className="bi bi-chevron-left"></i> Back</Button></div>
                 <span className='orderTitle'>{title}</span>
             </div>
         </div>

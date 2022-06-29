@@ -11,7 +11,7 @@ BucketsBox.propTypes = {
     imgSrc: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
-    price: PropTypes.string,
+    price: PropTypes.number,
     unit: PropTypes.string
 }
 
@@ -36,7 +36,7 @@ export default function BucketsBox({ imgSrc, title, description, price, unit }) 
             <Modal visible={visibility} hide={() => setModal(false)}>
                  <div className='modal-product d-flex flex-column'>
                     <div className='modalBucket container d-flex flex-column'> 
-                        <div className='text-center d-flex justify-content-center' onClick={(event) => {event.stopPropagation();setModal(false)} } ><Button style={{backgroundColor:'#FFC700', minWidth:'250px'}}><i class="bi bi-chevron-left"></i> Back</Button></div>
+                        <div className='text-center d-flex justify-content-center' onClick={(event) => {event.stopPropagation();setModal(false)} } ><Button style={{backgroundColor:'#FFC700', minWidth:'250px'}}><i className="bi bi-chevron-left"></i> Back</Button></div>
                         <center><img src="images/product/big-buckets.png" className="bucketImage" width="80%" /></center>
                         <div className='americanSection'>
                             <span className='title1 font-weight-bold'>American Bucket</span>

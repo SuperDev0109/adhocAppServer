@@ -11,7 +11,7 @@ const AddressDropBox = (props) => {
   return (
     <div className="dropbox-container dropdown mg-0">
       <div
-        class="dropdown-toggle"
+        className="dropdown-toggle"
         type="button"
         id="dropdownMenuButton1"
         data-bs-toggle="dropdown"
@@ -22,7 +22,7 @@ const AddressDropBox = (props) => {
       </div>
       <div className="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton1">
         <div className="d-flex"><img src="images/icons/plus.png" className="" alt="prev icon image"/>
-        <a class="dropdown-item p-0" href="#">
+        <a className="dropdown-item p-0" href="#">
          Add a new address
         </a></div>
       </div>
@@ -43,11 +43,11 @@ export const ShoppingCartDropBox = (props) => {
       >
         <ShoppingCartIcon></ShoppingCartIcon>
       </div>
-      <div class="dropdown-menu mt-1" aria-labelledby="dropdownshopping">
-        <div class="dropdown-item p-0" href="#">
+      <div className="dropdown-menu mt-1" aria-labelledby="dropdownshopping">
+        <div className="dropdown-item p-0" href="#">
         You have no items in your shopping cart
         </div>
-        <div class="dropdown-item mt-2 d-flex justify-content-center"  onClick={()=>navigate('/shoppingcart')}href="#">
+        <div className="dropdown-item mt-2 d-flex justify-content-center"  onClick={()=>navigate('/shoppingcart')}href="#">
           <Button style={{height:'40px'}}>Go to cart</Button>
         </div>
       </div>
@@ -66,8 +66,8 @@ export const HeartDropBox = (props) => {
       >
         <HeartIcon></HeartIcon>
       </div>
-      <div class="dropdown-menu mt-1" aria-labelledby="dropdownshopping">
-        <div class="dropdown-item p-0" href="#">
+      <div className="dropdown-menu mt-1" aria-labelledby="dropdownshopping">
+        <div className="dropdown-item p-0" href="#">
         Add your favourite food, restaurants or another
         </div>
         
@@ -88,11 +88,11 @@ export const UserDropBox = (props) => {
       >
         <HeartIcon></HeartIcon>
       </div>
-      <div class="dropdown-menu mt-1" style={{minWidth:'26rem'}} aria-labelledby="dropdownshopping">
-        <div class="dropdown-item p-0" href="#">
+      <div className="dropdown-menu mt-1" style={{minWidth:'26rem'}} aria-labelledby="dropdownshopping">
+        <div className="dropdown-item p-0" href="#">
         Log in to your Adhoc account and have full access to the entire shopping list
         </div>
-        <div class="dropdown-item mt-2 d-flex justify-content-center" href="#">
+        <div className="dropdown-item mt-2 d-flex justify-content-center" href="#">
           <Button style={{height:'40px',marginRight:'1rem'}}>Log in</Button>
           <Button style={{height:'40px'}}>New account</Button>
         </div>
@@ -105,7 +105,7 @@ export const FilterDropBox = (props) => {
   return (
     <div className="dropbox-container dropdown mg-0">
       <div
-        class="dropdown-toggle"
+        className="dropdown-toggle"
         type="button"
         id="dropdownfilter"
         data-bs-toggle="dropdown"
@@ -114,14 +114,14 @@ export const FilterDropBox = (props) => {
       >
         <FilterIcon></FilterIcon>Filter
       </div>
-      <div class="dropdown-menu mt-2" aria-labelledby="dropdownfilter">
-        <a class="dropdown-item" href="#">
+      <div className="dropdown-menu mt-2" aria-labelledby="dropdownfilter">
+        <a className="dropdown-item" href="#">
           filter1
         </a>
-        <a class="dropdown-item" href="#">
+        <a className="dropdown-item" href="#">
           filter2
         </a>
-        <a class="dropdown-item" href="#">
+        <a className="dropdown-item" href="#">
           filter3
         </a>
       </div>
@@ -132,7 +132,7 @@ export const SortDropBox = (props) => {
   return (
     <div className="dropbox-container dropdown mg-0">
       <div
-        class="dropdown-toggle"
+        className="dropdown-toggle"
         type="button"
         id="dropdownsort"
         data-bs-toggle="dropdown"
@@ -141,14 +141,14 @@ export const SortDropBox = (props) => {
       >
         <SortIcon></SortIcon>Sort
       </div>
-      <div class="dropdown-menu mt-2" aria-labelledby="dropdownsort">
-        <a class="dropdown-item" href="#">
+      <div className="dropdown-menu mt-2" aria-labelledby="dropdownsort">
+        <a className="dropdown-item" href="#">
           sort1
         </a>
-        <a class="dropdown-item" href="#">
+        <a className="dropdown-item" href="#">
           sort2
         </a>
-        <a class="dropdown-item" href="#">
+        <a className="dropdown-item" href="#">
           sort3
         </a>
       </div>

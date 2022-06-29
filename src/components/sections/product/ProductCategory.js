@@ -9,7 +9,7 @@ import Slider from 'react-slick';
 import ProductCategoryItem from '../../UI/products/ProductCategoryItem';
 import BucketsBox from '../../UI/products/BucketsBox';
 
-import { getProducts } from '../../../actions/product';
+import { getProducts, getAuthToken } from '../../../actions/product';
 import { useDispatch, useSelector } from 'react-redux';
 
 export default function ProductCategory() {
@@ -17,7 +17,14 @@ export default function ProductCategory() {
     const { products } = useSelector(state => state.product);
 
     useEffect(() => {
-         dispatch(getProducts());
+        async function check() {
+            const result = await dispatch(getProducts());
+            if (result === 'fail') {
+                await dispatch(getAuthToken());
+                await dispatch(getProducts());
+            }
+        }
+        check();
     }, []);
 
     const settings_category = {
@@ -67,7 +74,7 @@ return (
                 <div className='productBucketBoxSection row'>
                     {products.products.map((item, index) => { 
                         if (item.parentGroup === 'ec5573e9-6c91-433f-ac79-e5e1b9c60c87') {
-                            return (<div className='col-xl-4 col-md-6 col-sm-12'><BucketsBox imgSrc="images/product/buckets.png" title={item.name} description="Bucket contains 4 pieces of Kentucky chicken, 8x Hot Wings, 8x Strips, 4x..." price={item.sizePrices[0].price.currentPrice} unit="RON" /></div>);
+                            return (<div className='col-xl-4 col-md-6 col-sm-12' key={item.id}><BucketsBox imgSrc="images/product/buckets.png" title={item.name} description="Bucket contains 4 pieces of Kentucky chicken, 8x Hot Wings, 8x Strips, 4x..." price={item.sizePrices[0].price.currentPrice} unit="RON" /></div>);
                         }
                     })}
                 </div>
@@ -80,7 +87,7 @@ return (
                 <div className='productBucketBoxSection row'>
                     {products.products.map((item, index) => { 
                         if (item.parentGroup === 'ab8686bb-a71d-4184-9baa-b9a1ec86b1dd') {
-                            return (<div className='col-xl-4 col-md-6 col-sm-12'><BucketsBox imgSrc="images/product/buckets.png" title={item.name} description="Bucket contains 4 pieces of Kentucky chicken, 8x Hot Wings, 8x Strips, 4x..." price={item.sizePrices[0].price.currentPrice} unit="RON" /></div>);
+                            return (<div className='col-xl-4 col-md-6 col-sm-12' key={item.id}><BucketsBox imgSrc="images/product/buckets.png" title={item.name} description="Bucket contains 4 pieces of Kentucky chicken, 8x Hot Wings, 8x Strips, 4x..." price={item.sizePrices[0].price.currentPrice} unit="RON" /></div>);
                         }
                     })}
                 </div>
@@ -93,7 +100,7 @@ return (
                 <div className='productBucketBoxSection row'>
                     {products.products.map((item, index) => { 
                         if (item.parentGroup === 'ef8d9120-1495-43fe-be2c-580a4a469605') {
-                            return (<div className='col-xl-4 col-md-6 col-sm-12'><BucketsBox imgSrc="images/product/buckets.png" title={item.name} description="Bucket contains 4 pieces of Kentucky chicken, 8x Hot Wings, 8x Strips, 4x..." price={item.sizePrices[0].price.currentPrice} unit="RON" /></div>);
+                            return (<div className='col-xl-4 col-md-6 col-sm-12' key={item.id}><BucketsBox imgSrc="images/product/buckets.png" title={item.name} description="Bucket contains 4 pieces of Kentucky chicken, 8x Hot Wings, 8x Strips, 4x..." price={item.sizePrices[0].price.currentPrice} unit="RON" /></div>);
                         }
                     })}
                 </div>
@@ -106,7 +113,7 @@ return (
                 <div className='productBucketBoxSection row'>
                     {products.products.map((item, index) => { 
                         if (item.parentGroup === 'a6081e1f-0b74-44b4-a63c-8fdeccc44b37') {
-                            return (<div className='col-xl-4 col-md-6 col-sm-12'><BucketsBox imgSrc="images/product/buckets.png" title={item.name} description="Bucket contains 4 pieces of Kentucky chicken, 8x Hot Wings, 8x Strips, 4x..." price={item.sizePrices[0].price.currentPrice} unit="RON" /></div>);
+                            return (<div className='col-xl-4 col-md-6 col-sm-12' key={item.id}><BucketsBox imgSrc="images/product/buckets.png" title={item.name} description="Bucket contains 4 pieces of Kentucky chicken, 8x Hot Wings, 8x Strips, 4x..." price={item.sizePrices[0].price.currentPrice} unit="RON" /></div>);
                         }
                     })}
                 </div>

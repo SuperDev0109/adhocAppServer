@@ -19,7 +19,7 @@ export default function BucketBoxCount({ title1, title2, title3, count, price, c
             <div className='panel'>
                 <div className='section1'>
                     <span className='section1Title'>{title1}</span>
-                    <span class="close">&times;</span>
+                    <span className="close">&times;</span>
                 </div>
                 <div className='section2'>
                     <span>{title2}</span>

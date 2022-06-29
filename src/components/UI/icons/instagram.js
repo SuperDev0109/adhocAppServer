@@ -17,9 +17,9 @@ const Instagram = () => {
         height="37"
         rx="8.5"
         stroke="black"
-        stroke-width="3"
+        strokeWidth="3"
       />
-      <circle cx="42" cy="40" r="8.5" stroke="black" stroke-width="3" />
+      <circle cx="42" cy="40" r="8.5" stroke="black" strokeWidth="3" />
       <circle cx="52" cy="29" r="2" fill="black" />
       <defs>
         <filter
@@ -29,9 +29,9 @@ const Instagram = () => {
           width="83"
           height="83"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

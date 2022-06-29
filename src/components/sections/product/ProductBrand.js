@@ -13,7 +13,7 @@ export default function ProductBrand() {
         <div className="productBrandSection">
           <div className="brand-background"></div>
           <div className="mainPanel desktopBrand">
-            <div onClick={()=>navigate('/')}><Button style={{backgroundColor:'#FFC700',color:'black',paddingLeft:"10px"}}><i class="bi bi-chevron-left"></i> Back</Button></div>
+            <div onClick={()=>navigate('/')}><Button style={{backgroundColor:'#FFC700',color:'black',paddingLeft:"10px"}}><i className="bi bi-chevron-left"></i> Back</Button></div>
             <Avatar url={avatar_image} alt="KFC Image">
               {/* <img
               src="/images/product/chief.png"
@@ -36,7 +36,7 @@ export default function ProductBrand() {
             </div>
           </div>
           <div className="mainPanel mobileBrand d-none">
-          <Button style={{backgroundColor:'#FFC700',color:'black',paddingLeft:"5px"}}><i class="bi bi-chevron-left"></i> Back</Button>
+          <Button style={{backgroundColor:'#FFC700',color:'black',paddingLeft:"5px"}}><i className="bi bi-chevron-left"></i> Back</Button>
           <div>
                 <div className="title1">KFC</div>
                 <div className="title2">From 11:00 - 17:00</div>

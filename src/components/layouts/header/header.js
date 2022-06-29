@@ -66,7 +66,7 @@ const Header = () => {
       <Modal visible={visibility} hide={() => setModal(false)} showHideIcon>
         <div className="modal-content p-4">
           <div className="close-cont" onClick={() => setModal(false)}>
-            <span class="close">&times;</span>
+            <span className="close">&times;</span>
           </div>
           <div className="d-flex mb-3 justify-content-between align-items-center">
             <div className="icon-cover d-flex justify-content-center align-items-center">
