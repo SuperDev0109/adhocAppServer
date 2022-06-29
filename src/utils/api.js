@@ -3,7 +3,7 @@ import axios from 'axios';
 // import { GET_NEWS } from '../actions/types';
 
 const api = axios.create({
-  baseURL: 'https://api-eu.iiko.services/api',
+  baseURL: '/api',
   headers: {
     'Content-Type': 'application/json'
   }
@@ -17,11 +17,11 @@ const api = axios.create({
  logout the user if the token has expired
 **/
 
-api.interceptors.request.use(function (config) {
-  config.headers.Authorization =  localStorage.getItem('token');
+// api.interceptors.request.use(function (config) {
+//   config.headers.Authorization =  localStorage.getItem('token');
 
-  return config;
-});
+//   return config;
+// });
 
 api.interceptors.response.use(
   res => res,

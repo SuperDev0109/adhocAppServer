@@ -2,27 +2,7 @@ import api from '../utils/api';
 import setAuthToken from '../utils/setAuthToken';
 
 export const getAuthToken = () => async dispatch => {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-
-    var raw = JSON.stringify({
-        "apiLogin": "b23027da-b22"
-    });
-
-    var requestOptions = {
-        method: 'POST',
-        headers: myHeaders,
-        body: raw,
-        redirect: 'follow'
-    };
-
-    fetch("/api/1/access_token", requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
-        .catch(error => console.log('error', error));
-
-
-    // const res = await api.post('/1/access_token', {"apiLogin": "b23027da-b22"});
+    const res = await api.post('/1/access_token', {"apiLogin": "b23027da-b22"});
     // setAuthToken(res.data.token);
 }
 
