@@ -19,11 +19,11 @@ export default function ProductCategory() {
     useEffect(() => {
         async function check() {
             await dispatch(getAuthToken());
-            const result = await dispatch(getProducts());
-            if (result === 'fail') {
-                await dispatch(getAuthToken());
-                await dispatch(getProducts());
-            }
+            // const result = await dispatch(getProducts());
+            // if (result === 'fail') {
+            //     await dispatch(getAuthToken());
+            //     await dispatch(getProducts());
+            // }
         }
         check();
     }, []);
