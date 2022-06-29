@@ -2,7 +2,7 @@ import api from '../utils/api';
 import setAuthToken from '../utils/setAuthToken';
 
 export const getAuthToken = () => async dispatch => {
-    const res = await api.post('/api/1/access_token', {"apiLogin": "b23027da-b22"});
+    const res = await api.post('/1/access_token', {"apiLogin": "b23027da-b22"});
     setAuthToken(res.data.token);
 }
 
@@ -12,7 +12,7 @@ export const getProducts = (param) => async dispatch => {
         const data = {
             organizationId: process.env.REACT_APP_ORGANIZATION_ID
         }
-        const res = await api.post('/api/1/nomenclature', data);
+        const res = await api.post('/1/nomenclature', data);
 
         dispatch({
             type: 'GET_PRODUCTS',

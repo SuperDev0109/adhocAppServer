@@ -3,7 +3,7 @@ import axios from 'axios';
 // import { GET_NEWS } from '../actions/types';
 
 const api = axios.create({
-  baseURL: '/',
+  baseURL: '/api',
   headers: {
     'Content-Type': 'application/json'
   }
