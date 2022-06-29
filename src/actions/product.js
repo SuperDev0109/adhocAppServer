@@ -10,14 +10,13 @@ export const getAuthToken = () => async dispatch => {
     });
 
     var requestOptions = {
-        mode: 'no-cors',
         method: 'POST',
         headers: myHeaders,
         body: raw,
         redirect: 'follow'
     };
 
-    fetch("https://api-eu.iiko.services/api/1/access_token", requestOptions)
+    fetch("/api/1/access_token", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
