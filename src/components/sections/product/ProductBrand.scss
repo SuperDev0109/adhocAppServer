@@ -1,0 +1,68 @@
+.productBrandSection {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),url('./img/res_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    padding-bottom: 70px;
+    .mainPanel {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        .chief{
+            width: 121px !important;
+            height: 121px !important;
+            border: #FFB800 7px solid !important;
+        }
+        .title1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 60px;
+            color: #FFFFFF;
+        }
+        .title2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 45px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .desktopBrand {
+        display: none !important;
+    }
+    .mobileBrand {
+        display: flex !important;
+        .title1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px !important;
+            line-height: 50px !important;
+            color: #FFFFFF;
+        }
+        .title2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px !important;
+            line-height: 30px !important;
+            color: #FFFFFF;
+        }
+    }
+
+    .productBrandSection {
+        padding-bottom: 100px;
+        .adhoc-button{
+            padding-left: 5px !important;
+        }
+    }
+}

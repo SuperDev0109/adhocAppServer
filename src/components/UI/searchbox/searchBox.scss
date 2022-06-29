@@ -1,0 +1,36 @@
+.searchbox-container{
+    height: 50px;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 2px 5px 0 rgba(0,0,0, 0.3);
+    border-radius: 50px;
+    align-items: center;
+    background-color: white;
+    svg{
+        color: #FFC700;
+        width: 60px;
+        padding-left: 10px;
+    }
+    input{
+        height: 40px;
+        border: none !important;
+        font-size: 17px;
+        border-radius: 50px;
+    }
+    input:focus{
+    outline: none;
+    }
+}
+@media screen and (max-width: 992px) {
+    .searchbox-container {
+        height: 40px !important;
+        svg{
+            width: 40px;
+            padding: 0 10px;
+        }
+      input {
+        height: 35px;
+        font-size: 13px;
+      }
+    }
+}

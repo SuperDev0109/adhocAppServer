@@ -1,0 +1,62 @@
+.finishInvoiceSection {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    .title1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 60px;
+        color: #000000;
+    }
+
+    .title2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 38px;
+        color: #000000;
+    }
+
+    div {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .finishInvoiceSection {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+        .title1 {
+            font-size: 25px;
+        }
+    
+        .title2 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .finishInvoiceSection {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    
+        .title1 {
+            font-size: 23px;
+        }
+    
+        .title2 {
+            font-size: 18px;
+        }
+    }
+}

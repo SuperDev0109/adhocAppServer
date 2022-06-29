@@ -1,0 +1,68 @@
+.finishTipsSection {
+    padding-top: 30px;
+    text-align: left;
+    .title1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 60px;
+        color: #000000;
+    }
+    .title2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    .box {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .finishTipsSection {
+        padding-top: 50px;
+        .title1 {
+            font-size: 25px;
+        }
+        .title2 {
+            font-size: 18px;
+        }
+    
+        .box {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 13px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .finishTipsSection {
+        padding-top: 30px;
+    
+        .title1 {
+            font-size: 23px;
+        }
+        .title2 {
+            font-size: 15px;
+        }
+    
+        .box {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 13px;
+        }
+    }
+    
+}

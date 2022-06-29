@@ -1,0 +1,73 @@
+.finishDiscountSection {
+    padding-top: 60px;
+    text-align: left;
+    .title1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 60px;
+        color: #000000;
+    }
+
+    .box {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .voucherTitle {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 38px;  
+            color: #000000;
+            padding-bottom: 11px;
+            border-bottom: 2px solid #FFB800;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .finishDiscountSection {
+        padding-top: 50px;
+    
+        .title1 {
+            font-size: 25px;
+        }
+    
+        .box {
+            margin-top: 16px;
+    
+            .voucherTitle {
+                font-size: 18px;
+                line-height: 38px;  
+                color: #000000;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #FFB800;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .finishDiscountSection {
+        padding-top: 30px;
+    
+        .title1 {
+            font-size: 23px;
+        }
+    
+        .box {
+            margin-top: 16px;
+    
+            .voucherTitle {
+                font-size: 16px;
+                padding-bottom: 7px;
+                border-bottom: 2px solid #FFB800;
+            }
+        }
+    }
+}

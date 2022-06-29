@@ -1,0 +1,27 @@
+.adhoc-button{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px 20px;
+    height: 50px;
+    color:black;
+    border: #FFB800 solid 3px;
+    border-radius: 35px;
+    
+    font-weight: bold;
+    i{
+        font-weight: bold;
+    }
+}
+.adhoc-button:hover{
+    background-color: #FFB800;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0 rgba(0,0,0, 0.2), 0px 0px 4px 1px rgba(0,0,0, 0.1);
+}
+@media screen and (max-width: 992px) {
+    .adhoc-button {
+        font-size: 15px !important;
+        line-height: 20px !important;
+        padding: 5px 20px !important;
+        height: 35px !important;
+    }
+  }

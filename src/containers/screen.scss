@@ -1,0 +1,17 @@
+.screen{
+    position: relative;
+    width: 90%;
+    // box-shadow: 0px 4px 10px 0 rgba(0,0,0, 0.3);
+    padding: 0;
+    max-width: 1440px;
+}
+.page-container
+{
+    width: 94%;
+    margin: 3%;
+}
+@media screen and (max-width: 992px) {
+    .screen{
+        width: 100%;
+    }
+}

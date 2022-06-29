@@ -1,0 +1,59 @@
+.show404PageSection {
+    
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    .adhoc-button{
+        width: 50%;
+
+    }
+    .title1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 60px;
+        color: #000000;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .show404PageSection {
+        width: 100%;
+        gap: 50px;
+        img {
+            width: 100%;
+        }
+        .adhoc-button{
+            min-width: 300px !important;
+            font-size: 20px !important;
+            line-height: 30px !important;
+            height: 50px !important;
+        }
+        .title1 {
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .show404PageSection {
+        display: flex;
+        gap: 30px;
+        .adhoc-button{
+            min-width: 280px !important;
+            font-size: 16px !important;
+            height: 50px !important;
+        }
+        .title1 {
+            font-size: 25px;
+            line-height: 40px;
+        }
+    }
+}

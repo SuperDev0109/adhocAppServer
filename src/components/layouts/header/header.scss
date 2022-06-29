@@ -1,0 +1,193 @@
+.head{
+  width: 100% !important;
+  height: 100px;
+  padding: 0 3%;
+  .header{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .icon-container{
+      
+      justify-content: space-between;
+      .toggleButton{
+        display: none;
+      }
+      .icon-dropbox{
+        height: auto;
+        padding: 0;;
+      }
+      svg{
+        margin: 0 1rem;
+        width: 40px;
+        height: 40px;
+      }
+      svg:hover{
+        cursor: pointer;
+      }
+      .menu-icon-cover:hover,.menu-icon-cover:active{
+        border-radius: 25px;
+        box-shadow: 0px 2px 5px 0 rgba(0,0,0, 0.2), 0px 0px 4px 1px rgba(0,0,0, 0.1);
+      }
+    }
+    .logo {
+      width: 226px;
+      height : 56px;
+    }
+    .demenu{
+      div{
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .respons{
+    margin-bottom: 0.5rem;
+    display: none;
+  }
+  .modal-content{
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 450px;
+    height: 237px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    box-shadow: 0px 2px 5px 2px rgba(255,255,255,0.6);
+    .close {
+        color: #444444;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .icon-cover{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        box-shadow: 0px 2px 5px 0 rgba(0,0,0, 0.2), 0px 0px 4px 1px rgba(0,0,0, 0.1);
+    }
+    .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .adhoc-button{
+        min-width: 155px;
+    }
+    svg{
+      width: 30px;
+      height: 30px;
+    }
+}
+}
+@media screen and (max-width: 1440px) {
+  .head {
+    width: 100% !important;
+    .icon-container{
+      margin: 0 1rem;
+      svg{
+        margin:0 0.5rem !important;
+        width: 34px !important;
+        height: 33px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .head {
+    .icon-container{
+      margin: 0 !important;
+      svg{
+        margin:0 0.25rem !important;
+        width: 34px !important;
+        height: 33px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .head {
+    height: 80px;
+    .logo {
+      width: 164px !important;
+      height : 40px !important;
+    }
+    .icon-container{
+      .heart{
+        margin: 0 !important;
+      }
+      svg{
+        width: 30px !important ;
+        height: 30px !important;
+      }
+      .usericon{
+        display: none;
+      }
+      .heart{
+        width: 0px !important;
+
+      }
+      .toggleButton{
+        display: block !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .head {
+    padding: 0 10px;
+    height: auto;
+    .logo {
+      width: 124px !important;
+      height : 30px !important;
+    }
+    .demenu{
+      display: none !important;
+    }
+    .respons{
+      display: block;
+    }
+    .icon-container{
+      svg{ height:25px !important; width: 25px !important;}
+    }
+    .modal-content{
+      padding: 1rem !important;
+      width: 370px;
+      height: 203px;
+      .close-cont{
+          padding-bottom: 0.5rem !important;
+      }
+      .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+      }
+      .icon-cover{
+          width: 45px !important;
+          height: 45px !important;
+          border-radius: 100%;
+          box-shadow: 0px 2px 5px 0 rgba(0,0,0, 0.2), 0px 0px 4px 1px rgba(0,0,0, 0.1);
+      }
+      .close:hover, .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+      }
+      svg{
+          width: 28px !important;
+          height: 28px !important;
+      }
+      .adhoc-button{
+          min-width: 101px ;
+          font-size: 20px;
+          line-height: 20px;
+          height: 40px;
+      }
+      #fav{
+          width: 80% !important;
+      }
+  }
+  }
+}

@@ -1,0 +1,35 @@
+.select{
+    padding: 10px 60px;
+    
+    margin: 0 0 4vw 0;
+    background: #FFB800;
+    div{
+        font-size:25px ;
+        line-height: 45px;
+        font-weight: 500;
+    }
+
+    .option:active, .option:hover{
+        background-color: white;
+        border-radius: 33.5px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 992px) {
+    .select {
+        padding: 10px 15px;
+        div{
+            font-size:21px;
+            font-weight: 500;
+        }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .select {
+        padding: 8px 15px;
+        div{
+            font-size:17px ;
+            font-weight: 500;
+        }
+    }
+  }

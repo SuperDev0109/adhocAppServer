@@ -1,0 +1,109 @@
+.summaryCostComponent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #FFB800;
+
+    .panel1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        color: #000000;
+    }
+
+    .panel2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+
+        .title1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 45px;
+            color: #000000;
+        }
+        .title2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000000;
+        }
+        .total1BigSize {
+            font-size: 30px;
+        }
+        .total2BigSize {
+            font-size: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .summaryCostComponent {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #FFB800;
+    
+        .panel1 {
+            font-size: 20px;
+        }
+    
+        .panel2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+    
+            .title1 {
+                font-size: 20px;
+            }
+            .title2 {
+                font-size: 20px;
+            }
+            .total1BigSize {
+                font-size: 20px;
+            }
+            .total2BigSize {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .summaryCostComponent {
+        padding-bottom: 6px;
+        border-bottom: 2px solid #FFB800;
+    
+        .panel1 {
+            font-size: 18px;
+        }
+    
+        .panel2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 7px;
+    
+            .title1 {
+                font-size: 18px;
+            }
+            .title2 {
+                font-size: 18px;
+            }
+            .total1BigSize {
+                font-size: 18px;
+            }
+            .total2BigSize {
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.menu-screen{
+    .productCategorySection {
+        padding-top: 50px;
+    }
+    .productBucketBoxSectionTitle {
+        padding-top: 30px;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 7%;
+    }
+
+    .productBucketBoxSection {
+        padding-bottom: 30px;
+        
+    }
+
+}
+@media screen and (max-width: 992px) {
+    .menu-screen{
+        .productBucketBoxSectionTitle {
+            font-size: 35px !important;
+            line-height: 60px;
+        }
+    }
+    
+  }
+  @media screen and (max-width: 767px) {
+    .menu-screen{
+
+        .productBucketBoxSectionTitle {
+            font-size: 30px !important;
+            line-height: 40px !important;
+        }
+    }
+    
+  }

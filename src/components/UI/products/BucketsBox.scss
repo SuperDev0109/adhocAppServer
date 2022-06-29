@@ -1,0 +1,625 @@
+.bucketsBoxComponent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.25) ;
+    border-radius: 20px;
+    padding: 20px;
+    width: 94%;
+    margin:3%;
+    span{
+        text-align: left;
+    }
+    .panel1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        gap: 10px;
+        .title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 38px;
+        }
+        .description {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 30px;
+        }
+        .price {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 45px;
+
+            .unit {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .panel2{
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+.modal-product{
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px 0;
+    width: 50vw;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.modalBucket::-webkit-scrollbar {
+    display: none;
+  }
+.modalBucket {
+    overflow: auto;
+    scrollbar-color: rgba(0,0,0,0);
+    gap: 30px;
+    top:50px;
+    
+    text-align: left;
+    .americanSection {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 40px;
+        .title1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 60px;
+            color: #000000;
+        }
+        .title2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 45px;
+            color: #000000;
+        }
+        .title3 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000000;
+        }
+        .title4 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #000000;
+        }
+        .title5 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #000000;
+        }
+    }
+    .selectOptionSection {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 40px;
+
+        .borderWidth {
+            width: 100%;
+            border: 1px solid #FFB800;
+        }
+
+        .title1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 45px;
+            color: #000000;
+        }
+        .potatoTxt {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+        .boxParent {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                .panel1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    input[type="radio"] {
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+                    input[type="radio"]:after {
+                        background-color: white;
+                        border: 1px solid #FFB800;
+                        outline: none !important;
+                        border-radius: 50%;
+                        content: '';
+                        display: block;
+                        height: 30px;
+                        width: 30px;
+                    }
+                    input[type="radio"]:checked:after {
+                        background-color: #FFB800;
+                    }
+    
+                    .radioTxtBox {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+                        
+                        .radioTxt1 {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 38px;
+                            color: #000000;
+                        }
+                        .radioTxt2 {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 30px;
+                            color: #FFB800;
+                        }
+                    }
+                }
+                .panel2 {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .title1 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 45px;
+                        color: #000000;
+                    }
+                    .title2 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+
+    .comment {
+        padding: 0 40px;
+    }
+
+    .showMoreSection {
+        padding: 0 40px;
+    }
+
+    .countBox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 60px;  
+            color: #000000;
+        }
+    }
+
+    .nogap {
+        gap: 0px;
+    }
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+.modal-content {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 2px rgba(74, 74, 74, 0.4);
+    border-radius: 20px;
+}
+@media screen and (max-width: 992px) {
+    .bucketsBoxComponent {
+        .panel1 {
+            .title {
+                font-size: 20px;
+                line-height: 38px;
+                
+            }
+            .description {
+
+                font-size: 17px;
+                line-height: 30px;
+                
+            }
+    
+            .price {
+
+                font-size: 25px;
+                line-height: 45px;
+                
+                .unit {
+
+                    font-size: 20px;
+                    line-height: 30px;
+                    
+                }
+            }
+        }
+        .panel2{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    //bucketBox
+    .modal-product {
+        width: 90vw;
+        .americanSection {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0px;
+            .title1 {
+                font-size: 35px;
+                line-height: 52px;
+            }
+            .title2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .title3 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .title4 {
+                font-size: 18px;
+                line-height: 27px;
+            }
+            .title5 {
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+        .selectOptionSection {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0px;
+    
+            .borderWidth {
+                width: 100%;
+                border: 1px solid #FFB800;
+            }
+    
+            .title1 {
+                font-size: 25px;
+                line-height: 38px;
+                color: #000000;
+            }
+            .potatoTxt {
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 20px;
+            }
+            .boxParent {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .box {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+        
+                    .panel1 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+        
+                        input[type="radio"] {
+                            width: 30px;
+                            height: 30px;
+                            cursor: pointer;
+                        }
+                        input[type="radio"]:after {
+                            background-color: white;
+                            border: 1px solid #FFB800;
+                            outline: none !important;
+                            border-radius: 50%;
+                            content: '';
+                            display: block;
+                            height: 30px;
+                            width: 30px;
+                        }
+                        input[type="radio"]:checked:after {
+                            background-color: #FFB800;
+                        }
+        
+                        .radioTxtBox {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px;
+                            
+                            .radioTxt1 {
+                                font-size: 20px;
+                                line-height: 30px;
+                                
+                            }
+                            .radioTxt2 {
+                                font-size: 17px;
+                                line-height: 27px;
+                            }
+                        }
+                    }
+                    .panel2 {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        justify-content: center;
+                        align-items: center;
+        
+                        .title1 {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                        .title2 {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .comment {
+            padding: 0px;
+        }
+    
+        .showMoreSection {
+            padding: 0px;
+        }
+    
+        .countBox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+    
+            span {
+                font-size: 30px;
+                line-height: 52px;  
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .bucketsBoxComponent {
+        .panel1 {
+            .title {
+                font-size: 18px;
+                line-height: 38px;
+                
+            }
+            .description {
+
+                font-size: 13px;
+                line-height: 30px;   
+            }
+    
+            .price {
+                font-size: 18px;
+                line-height: 45px;
+                .unit {
+
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .panel2{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .modal-product {
+        .americanSection {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0px;
+            .title1 {
+                font-size: 23px;
+                line-height: 45px;
+            }
+            .title2 {
+                font-size: 20px;
+                line-height: 22px;
+            }
+            .title3 {
+                font-size: 17px;
+                line-height: 30px;
+            }
+            .title4 {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            .title5 {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        .selectOptionSection {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0px;
+    
+            .borderWidth {
+                width: 100%;
+                border: 1px solid #FFB800;
+            }
+            .title1 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .potatoTxt {
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
+            .boxParent {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .box {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+        
+                    .panel1 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+        
+                        input[type="radio"] {
+                            width: 30px;
+                            height: 30px;
+                            cursor: pointer;
+                        }
+                        input[type="radio"]:after {
+                            background-color: white;
+                            border: 1px solid #FFB800;
+                            outline: none !important;
+                            border-radius: 50%;
+                            content: '';
+                            display: block;
+                            height: 30px;
+                            width: 30px;
+                        }
+                        input[type="radio"]:checked:after {
+                            background-color: #FFB800;
+                        }
+        
+                        .radioTxtBox {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px;
+                            
+                            .radioTxt1 {
+                                font-size: 15px;
+                                line-height: 27px;
+                            }
+                            .radioTxt2 {
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    .panel2 {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        justify-content: center;
+                        align-items: center;
+        
+                        .title1 {
+                            font-size:17px;
+                            line-height: 30px;
+                        }
+                        .title2 {
+                            font-size: 15px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .comment {
+            padding: 0px;
+        }
+    
+        .showMoreSection {
+            padding: 0px;
+        }
+    
+        .countBox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            span {
+                font-size: 28px;
+                line-height: 52px;  
+            }
+        }
+    }
+}

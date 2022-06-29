@@ -1,0 +1,47 @@
+.footer{
+    padding: 3vw 5vw;
+    background: #FFB800;
+    p{
+        font-size:20px ;
+    }
+    .title{
+        font-size:30px ;
+        font-weight: 700;
+    }
+    .copyright{
+        font-size:15px ;
+    }
+}
+@media screen and (max-width: 992px) {
+    .footer{
+        padding: 3vw 5vw;
+        p{
+            font-size:18px ;
+        }
+        .title{
+            font-size:25px ;
+            font-weight: 700;
+        }
+        .copyright{
+            font-size:13px ;
+        }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .footer{
+        padding: 3vw 5vw;
+        p{
+            font-size:15px ;
+        }
+        .title{
+            font-size:20px ;
+            font-weight: 700;
+        }
+        .copyright{
+            font-size:12px ;
+        }
+        .follow{
+            text-align: left !important;
+        }
+    }
+  }

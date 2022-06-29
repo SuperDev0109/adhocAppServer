@@ -1,0 +1,76 @@
+.orderSummarySection {
+    background-image: url('./img/Union.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px;
+    margin-top: 50px;
+    margin-bottom: 3rem;
+    
+    .title1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 60px;
+        color: #000000;
+    }
+
+    .panel {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .finishSummaryTxt {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        text-align: left;
+        font-size: 20px;
+        line-height: 38px;
+        color: #000000;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .orderSummarySection {
+        gap: 20px;
+        padding: 50px 20px;
+    
+        .title1 {
+            font-size: 25px;
+        }
+    
+        .panel {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .finishSummaryTxt {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .orderSummarySection {
+        gap: 20px;
+        padding: 50px 20px;
+    
+        .title1 {
+            font-size: 25px;
+            text-align: center;
+        }
+        .panel {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .finishSummaryTxt {
+            font-size: 15px;
+        }
+    }
+}
