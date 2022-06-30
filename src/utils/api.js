@@ -7,7 +7,7 @@ const api = axios.create({
   baseURL: '/api',
   headers: {
     'Accept': 'application/json',
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/json; charset=utf-8',
     'X-Requested-With': 'XMLHttpRequest',
   }
   // httpsAgent: new https.Agent({  
