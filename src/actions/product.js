@@ -1,8 +1,14 @@
 import api from '../utils/api';
 import setAuthToken from '../utils/setAuthToken';
 
+import https from 'https';
+
 export const getAuthToken = () => async dispatch => {
-    const res = await api.post('/1/access_token', {"apiLogin": "b23027da-b22"});
+    const res = await api.post('/1/access_token', {"apiLogin": "b23027da-b22"}, {
+        httpsAgent: new https.Agent({
+          rejectUnauthorized: false
+        })
+      });
     // setAuthToken(res.data.token);
 }
 
