@@ -1,10 +1,36 @@
 import api from '../utils/api';
+import axios from 'axios';
 import setAuthToken from '../utils/setAuthToken';
 
 // import https from 'https';
 
 export const getAuthToken = () => async dispatch => {
-    const res = await api.post('/1/access_token', {"apiLogin": "b23027da-b22"});
+
+    var data = JSON.stringify({
+        "apiLogin": "b23027da-b22"
+    });
+
+    var config = {
+        method: 'post',
+        url: '/api/1/access_token',
+        headers: { 
+            'Content-Type': 'application/json'
+        },
+        data : data
+    };
+
+    axios(config)
+        .then(function (response) {
+            console.log(JSON.stringify(response.data));
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+    // var data = JSON.stringify({
+    //     "apiLogin": "b23027da-b22"
+    //   });
+    // const res = await api.post('/1/access_token', data);
     // setAuthToken(res.data.token);
 }
 
