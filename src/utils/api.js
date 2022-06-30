@@ -6,7 +6,8 @@ import https from 'https';
 const api = axios.create({
   baseURL: '/api',
   headers: {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    Accept: 'application/json'
   },
   httpsAgent: new https.Agent({  
     rejectUnauthorized: false
