@@ -6,6 +6,8 @@ import axios from 'axios';
 const api = axios.create({
   baseURL: '/api',
   headers: {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'GET, POST',
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'X-Requested-With': 'XMLHttpRequest',
