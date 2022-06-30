@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 //redux
 import { Provider } from 'react-redux';
 import store from './store';
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
