@@ -1,5 +1,5 @@
 import axios from 'axios';
-import https from 'https';
+// import https from 'https';
 // import store from '../store';
 // import { GET_NEWS } from '../actions/types';
 
@@ -8,10 +8,10 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json'
-  },
-  httpsAgent: new https.Agent({  
-    rejectUnauthorized: false
-  })
+  }
+  // httpsAgent: new https.Agent({  
+  //   rejectUnauthorized: false
+  // })
 });
 
 /**
